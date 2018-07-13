@@ -1,0 +1,11 @@
+{
+  "name": "vuetutorial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:piwnk/vuetutorial.git",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^5.1.0",
+    "eslint-plugin-vue": "^4.5.0"
+  }
+}
