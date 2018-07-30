@@ -1,0 +1,33 @@
+$size: 300px;
+
+
+#app {
+  height: 100vh;
+  
+  * {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+
+  .squares {
+    .demo {
+      height: $size;
+      width: $size;
+      background: grey;
+      margin: 10px; 
+    }
+    
+    .red {
+      background: red;
+    }
+    
+    .blue {
+      background: blue;
+    }
+    
+    .green {
+      background: green;
+    }
+  }
+}

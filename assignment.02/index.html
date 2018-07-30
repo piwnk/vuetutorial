@@ -15,6 +15,9 @@
         <input type="text" v-on:keydown.enter="saveInputValue">
         <p>{{ value }}</p>
     </div>
-
+    <div>
+        <input type="text" v-on:keydown.enter="value = $event.target.value">
+        <p>{{ value }}</p>
+    </div>
 </div>
 <script src=" app.js "></script>

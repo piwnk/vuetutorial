@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../libs/vue.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="squares">
+
+      <div class="demo" @click="toggleRed" :class="{red: attachRed}"></div>
+      <div class="demo" :class="divClasses"></div>
+      <div class="demo" :class="color"></div>
+    </div>
+    <div>
+      <input type="text" v-model="color">
+    </div>
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
