@@ -2,7 +2,8 @@ new Vue({
   el: "#app",
   data: {
     attachRed: true,
-    color: 'green'
+    color: 'green',
+    width: 200
   },
   methods: {
     toggleRed: function () {
@@ -14,6 +15,12 @@ new Vue({
       return {
         red: this.attachRed,
         blue: !this.attachRed
+      }
+    },
+    myStyle: function () {
+      return {
+        backgroundColor: this.color,
+        width: this.width + 'px'
       }
     }
   }
