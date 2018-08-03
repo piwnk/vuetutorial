@@ -14,6 +14,11 @@
           align-items: center;
 }
 
+#app .squares {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 #app .squares .demo {
   height: 300px;
   width: 300px;

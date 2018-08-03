@@ -11,6 +11,7 @@ $size: 300px;
   }
 
   .squares {
+    flex-wrap: wrap;
     .demo {
       height: $size;
       width: $size;
