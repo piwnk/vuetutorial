@@ -38,10 +38,13 @@
       <input type="text" v-model="fifthInputDivColor">
       <div class="square" :style="[fifthDivStyle]"></div>
     </div>
-    <!-- 6) Create a simple progress bar with setInterval and style bindings. Start it by hitting the below button. -->
+    <!-- 6) Create a simple progress bar with setInterval and style bindings. 
+      Start it by hitting the below button. -->
     <div>
       <button v-on:click="startProgress">Start Progress</button>
-      <div></div>
+      <div class="progressBar">
+        <div :style="progressStyle"></div>
+      </div>
     </div>
   </div>
   <script src="app.js"></script>
