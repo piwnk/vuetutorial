@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="../libs/vue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <p v-if="show">v-if deletes whole tag if false</p>
+    <p v-else>v-else</p>
+    <p v-show="show">v-show changes display to none</p>
+    <template v-if="show">
+      <div>I'm inside a template</div>
+    </template>
+
+    <button @click="show = !show">Switch</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
